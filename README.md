@@ -13,6 +13,7 @@ Essentially same results for Windows, MacOS and Linux
 * GCC 11.2.0
 * Intel oneAPI 2021.4
 * Ninja 1.10.2
+* CMake 3.21.4
 
 The rebuild.cmake script "touches" mod.f90, which would be expected to rebuild only: mod.f90, main.f90. GCC + Make/Ninja is OK.
 Intel compiler + Ninja rebuilds excessively--smod.f90 and smod2.f90 are unnecessarily rebuilt.
